@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Password Generator</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+        <link href="css/customstyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="settings">
+                <label for="length">Length of the password</label><br/>
+                <input type="number" name="length" id="length" value="16"><br/>
+                <label for="spe">Use special caracters</label>
+                <input type="checkbox" name="spe" id="spe"><br/>
+                <button id="btn-gen">Generate Pasword</button><br/>
+                <element class="small">If you don't use correct values the generator will use a length of 16 without special caracters by default</element>
+            </div>
+            <div id="result">
+                <textarea id="password" style="width: 100%;" readonly></textarea>
+                <button id="btn-copy">Copy to Clipboard</button>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/genPass.js"></script>
+    <script src="js/javescript.js"></script>
+</html>
