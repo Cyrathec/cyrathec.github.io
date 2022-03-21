@@ -4,16 +4,32 @@
         <meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Password Generator</title>
-	<link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/png" href="favicon.png">
         <link href="css/customstyle.css" rel="stylesheet">
     </head>
     <body>
         <div id="main">
             <div id="settings">
-                <label for="length">Length of the password</label><br/>
-                <input type="number" name="length" id="length" value="16"><br/>
-                <label for="spe">Use special caracters</label>
-                <input type="checkbox" name="spe" id="spe"><br/>
+                <p>
+                    <label for="length">Length of the password</label>  
+                    <input class="in-box el-box" type="number" name="length" id="length" value="16">
+                </p>
+                <p>
+                    <input type="checkbox" name="def" id="def">
+                    <label for="def">Use default caracters</label>
+                    <element class="el-box" readonly>abc...zABC...Z0123...9</element>
+                </p>
+                <p>
+                    <input type="checkbox" name="spe" id="spe">
+                    <label for="spe">Use special caracters</label>
+                    <element class="el-box" readonly>*+,-./:=?[\\]^_{}~!#$%@</element>
+                </p>
+                <p>
+                    <input type="checkbox" name="cus" id="cus">
+                    <label for="cus">Use custom caracters</label>
+                    <input type="text" class="el-box" name="cus_val" id="cus_val" value=""><br/>
+                    <element class="small">There is not duplication verification. This might use a character twice</element>
+                </p>
                 <button id="btn-gen">Generate Pasword</button><br/>
                 <element class="small">If you don't use correct values the generator will use a length of 16 without special caracters by default</element>
             </div>
