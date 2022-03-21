@@ -2,6 +2,16 @@
 {
     text-align: center;
 }
+.el-box
+{
+    border: solid black 1px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.in-box
+{
+    text-align: right;
+}
 .small
 {
     font-size: small;
