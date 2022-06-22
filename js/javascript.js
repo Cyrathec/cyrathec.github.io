@@ -13,13 +13,12 @@ function GetParams()
     return {type, length, ucl, lcl, num, spe, cus, cusVal, dup};
 }
 
-$("#btn-gen")[0].onclick = () =>
+$("#btn-gen")[0].onclick = async function()
 {
-    const {type, length, ucl, lcl, num, spe, cus, cusVal, dup} = GetParams()
-    $("#result")[0].children[0].value = GenPassword(type, length, ucl, lcl, num, spe, cus, cusVal, dup);
+    $("#result")[0].children[0].value = await GenPassword(GetParams());
 }
 
-$("#btn-copy")[0].onclick = () =>
+$("#btn-copy")[0].onclick = function()
 {
     var copyText = document.querySelector("#password");
     copyText.select();

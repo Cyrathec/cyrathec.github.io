@@ -51,12 +51,14 @@
             </div>
             <div id="notice">
                 <p>
-                    If you want to generate the password trought the console use GenPassword(int length, bool uppercase, bool lowercase, bool numbers, bool specials, bool custom, string custom, bool deleteDuplicated)
+                    If you want to generate the password trought the console use : await GenPassword(GetParams())<br/>
+                    You can use the same type of object that return GetParams()
                 </p>
             </div>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://eyhn.github.io/PasswordQualityCalculator/lib/PasswordQualityCalculator.js"></script>
     <script src="js/genPass.js"></script>
     <script src="js/javascript.js"></script>
 </html>
