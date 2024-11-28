@@ -47,7 +47,7 @@ function GetRandom(type, length, max)
         if(type)
         {
             var request = new XMLHttpRequest();
-            request.open("GET", "https://www.random.org/integers/?num=" + length + "&min=0&max=" + max + "&col=1&base=10&format=plain&rnd=new");
+            request.open("GET", "https://www.random.org/integers/?num=" + length + "&min=0&max=" + (max - 1) + "&col=1&base=10&format=plain&rnd=new");
     
             request.onload = function()
             {
@@ -59,7 +59,6 @@ function GetRandom(type, length, max)
                     for (let index = 0; index < res.length; index++)
                     {
                         res[index] = parseInt(res[index]);
-                        
                     }
 
                     resolve(res);
