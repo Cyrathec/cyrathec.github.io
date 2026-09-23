@@ -1,18 +1,17 @@
-#main
-{
+#main {
     text-align: center;
 }
-.el-box
-{
+
+.el-box {
     border: solid black 1px;
     padding: 4px;
     border-radius: 2px;
 }
-.in-box
-{
+
+.in-box {
     text-align: right;
 }
-.small
-{
+
+.small {
     font-size: small;
 }

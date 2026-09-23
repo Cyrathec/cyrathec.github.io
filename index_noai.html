@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="css/customstyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="settings">
+            <p>
+                <label for="type">Type of generation</label>
+                <input type="radio" name="type" id="tr" value="tr" checked>
+                <label for="tr">true random</label>
+                <input type="radio" name="type" id="pr" value="pr">
+                <label for="pr">pseudo random</label>
+            </p>
+            <p>
+                <label for="length">Length of the password</label>
+                <input class="in-box el-box" type="number" name="length" id="length" value="16">
+            </p>
+            <p>
+                <input type="checkbox" name="ucl" id="ucl" checked>
+                <label for="def">Use uppercase letters</label>
+                <input type="checkbox" name="num" id="num" checked>
+                <label for="def">Use numbers</label><br />
+                <input type="checkbox" name="lcl" id="lcl" checked>
+                <label for="def">Use lowercase letters</label>
+                <input type="checkbox" name="spe" id="spe">
+                <label for="spe">Use special characters</label><br />
+                <element class="small">Special characters used are : *+,-./:=?[\]^_{}~!#$%@</element>
+            </p>
+            <p>
+                <input type="checkbox" name="cus" id="cus">
+                <label for="cus">Use custom characters</label>
+                <input type="text" class="el-box" name="cus_val" id="cus_val" value=""><br />
+                <element class="small">Put the characters in the box</element>
+            </p>
+            <p>
+                <input type="checkbox" name="dup" id="dup">
+                <label for="dup">Delete duplicated charaters</label>
+            </p>
+            <button id="btn-gen">Generate Pasword</button><br />
+            <element class="small">If you don't use correct values the generator will use a length of 16 without special
+                caracters by default</element>
+        </div>
+        <div id="result">
+            <textarea id="password" style="width: 100%;" readonly></textarea>
+            <div hidden>Password Strengh : <element id="password-quality"></element> bits</div>
+            <button id="btn-copy">Copy to Clipboard</button>
+        </div>
+        <div id="notice">
+            <p>
+                If you want to generate the password trought the console use : await GenPassword(GetParams())<br />
+                You can use the same type of object that return GetParams()
+            </p>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://eyhn.github.io/PasswordQualityCalculator/lib/PasswordQualityCalculator.js"></script>
+<script src="js/genPass.js"></script>
+<script src="js/javascript.js"></script>
+
+</html>
