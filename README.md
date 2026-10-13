@@ -5,3 +5,6 @@ The second one is the old one that is hand made, you should be able to have it t
 # TODO
  - [X] \(Optional) Add a password quality calculator
  - [ ] \(Optional) Add a option that the password need a minimum quality ?
+
+# Credits
+ - Thank to EYHN for the [Password Quality Calculation](https://eyhn.github.io/PasswordQualityCalculator) (PasswordQualityCalculator.js and PopularPasswords.js)
