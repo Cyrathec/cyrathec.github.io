@@ -7,4 +7,4 @@ The second one is the old one that is hand made, you should be able to have it t
  - [ ] \(Optional) Add a option that the password need a minimum quality ?
 
 # Credits
- - Thank to EYHN for the [Password Quality Calculation](https://eyhn.github.io/PasswordQualityCalculator) (PasswordQualityCalculator.js and PopularPasswords.js)
+ - Thank to EYHN for the [Password Quality Calculation](https://github.com/eyhn/PasswordQualityCalculator) (PasswordQualityCalculator.js and PopularPasswords.js)
