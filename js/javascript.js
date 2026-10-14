@@ -15,9 +15,9 @@ function GetParams()
 
 $("#btn-gen")[0].onclick = async function()
 {
-    $("#result")[0].children[0].value = await GenPassword(GetParams());
-    $("#password-quality")[0].innerText = PasswordQualityCalculator($("#result")[0].children[0].value);
-    $("#password-quality")[0].parentElement.hidden = false;
+    $("#password")[0].value = await GenPassword(GetParams());
+    $("#password-quality")[0].children[0].innerText = PasswordQualityCalculator($("#password")[0].value);
+    $("#password-quality")[0].hidden = false;
 }
 
 $("#btn-copy")[0].onclick = function()
